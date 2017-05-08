@@ -13,7 +13,10 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              [ 'env', { "targets": { "uglify": true } } ]
+              [ 'env', { "targets": {
+                "browsers": "last 2 versions",
+                "uglify": true
+              } } ]
             ]
           }
         }
